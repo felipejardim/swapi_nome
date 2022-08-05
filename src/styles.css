@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-29_9e72b83c.png');
+    background-color: black;
+    background-blend-mode: hard-light;
+}
