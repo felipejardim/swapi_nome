@@ -1,0 +1,29 @@
+#seta{
+    text-align: center;
+    display: flex;
+
+    height: 100vh; 
+
+}
+
+a{
+    align-self: center;
+    width: 100%;
+    color: white;
+    font-size: 15em;
+    opacity: 25%;
+}
+
+
+.habilitado:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.habilitado:hover a{
+    opacity: 1;
+}
+
+.desabilitado a{
+    opacity: 0;
+    cursor: default;
+}
