@@ -8,8 +8,8 @@ export class ObterInfoService {
 
   constructor() { }
 
-  retornaNome():Promise<Object>{
-    const url: string = 'https://swapi.dev/api/people/1';
+  retornaNome(id:number = 1):Promise<Object>{
+    const url: string = 'https://swapi.dev/api/people/'+id;
     return axios.get(url)
       .then(res => res.data.name)
   }
