@@ -14,11 +14,11 @@ export class AppComponent implements OnInit{
   nome: string = " ... ";
   id:number = 1;
 
-  trocaNome(sinal:number, tentativa:number = 3): void{
+  trocaNome(sinal:number, tentativa:number = 2): void{
     this.id += sinal;
     this.infos.retornaNome(this.id)
       .then(res => { this.nome = res.toString(); })
-      .catch(e => { if(tentativa>0) this.trocaNome(sinal, tentativa--); else console.log(e); })
+      .catch(e => { if(tentativa>0 && this.id>0) this.trocaNome(sinal, tentativa-1); else console.log(e); })
   }
 
   ngOnInit(): void {

@@ -1,3 +1,3 @@
-<div class="habilitado" id="seta" (click)="sinal()">
+<div class="{{(desabilitar()) ? 'desabilitado':'habilitado'}}" id="seta" (click)="sinal()">
     <a><ng-content></ng-content></a>
 </div>
