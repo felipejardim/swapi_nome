@@ -2,6 +2,6 @@
   <div id="bordaDoNome">
     <p id="nome"> {{nome.toUpperCase()}} </p>
   </div>
-  <app-seta id="voltar" voltar="true"> < </app-seta>
-  <app-seta id="avancar"> > </app-seta>
+  <app-seta id="voltar"   [voltar]="true"   [idAtual]="1" (evento)="trocaNome($event)"> < </app-seta>
+  <app-seta id="avancar"  [voltar]="false"  [idAtual]="1" (evento)="trocaNome($event)"> > </app-seta>
 </div>
